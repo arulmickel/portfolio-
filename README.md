@@ -1,16 +1,57 @@
-# React + Vite
+# Arul Michael Antony Felix Raja — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌐 **Live Site:** [arulmickel.github.io/portfolio-](https://arulmickel.github.io/portfolio-/)
 
-Currently, two official plugins are available:
+A modern, responsive developer portfolio built with React, Tailwind CSS, and Vite — featuring scroll-triggered animations, parallax effects, and a sage green + white design theme.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- **React** — Component-based UI
+- **Tailwind CSS** — Utility-first styling
+- **Vite + SWC** — Fast builds and hot module reload
+- **Lucide React** — Icon library
+- **gh-pages** — Deployment to GitHub Pages
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Features
 
-## Expanding the ESLint configuration
+- Parallax scrolling hero section with geometric decorations
+- Scroll-triggered reveal animations via Intersection Observer
+- Staggered card animations for skills and projects
+- Responsive navbar with transparent-to-solid scroll transition
+- Mobile-friendly hamburger menu
+- Interactive project cards with GitHub links
+- Contact form with styled inputs
+- Custom scrollbar and text selection styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Sections
+
+- **Hero** — Name, title, and call-to-action
+- **About** — Bio, photo, and contact details
+- **Skills** — Android, AI-Assisted Dev, Testing, Backend, DevOps, Methodologies
+- **Experience** — Timeline with Digital Factory, TCS, and HumCen
+- **Projects** — BorBuddy, Parking Finder, Banking UI, DermAI, Deepfake Classifier, AI Code Generator
+- **Education** — M.S. Computer Science (AI) from DePaul University + Meta Certification
+- **Contact** — Form and social links
+
+## Run Locally
+
+```bash
+git clone https://github.com/arulmickel/portfolio-.git
+cd portfolio-
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173/portfolio-/` in your browser.
+
+## Deploy
+
+```bash
+npm run deploy
+```
+
+This builds the project and pushes to the `gh-pages` branch automatically.
+
+## License
+
+© 2026 Arul Michael Antony Felix Raja. All rights reserved.
