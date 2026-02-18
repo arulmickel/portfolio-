@@ -332,7 +332,7 @@ function About() {
               boxShadow: `12px 12px 0 ${sage[300]}`,
             }}>
               <img
-                src="/portfolio/my_pic.jpg"
+                src="/portfolio-/my_pic.jpg"
                 alt="Arul Michael Antony Felix Raja"
                 style={{
                   width: "100%", height: "100%",
