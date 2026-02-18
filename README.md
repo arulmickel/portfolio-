@@ -1,16 +1,16 @@
-# Arul Michael Antony Felix Raja — Portfolio
+# Arul Michael Antony Felix Raja | My Portfolio
 
 🌐 **Live Site:** [arulmickel.github.io/portfolio-](https://arulmickel.github.io/portfolio-/)
 
-A modern, responsive developer portfolio built with React, Tailwind CSS, and Vite — featuring scroll-triggered animations, parallax effects, and a sage green + white design theme.
+A modern, responsive developer portfolio built with React, Tailwind CSS, and Vite, featuring scroll-triggered animations, parallax effects, and a sage green + white design theme.
 
 ## Tech Stack
 
-- **React** — Component-based UI
-- **Tailwind CSS** — Utility-first styling
-- **Vite + SWC** — Fast builds and hot module reload
-- **Lucide React** — Icon library
-- **gh-pages** — Deployment to GitHub Pages
+- **React** , Component-based UI
+- **Tailwind CSS** , Utility-first styling
+- **Vite + SWC** , Fast builds and hot module reload
+- **Lucide React** , Icon library
+- **gh-pages** , Deployment to GitHub Pages
 
 ## Features
 
@@ -25,13 +25,13 @@ A modern, responsive developer portfolio built with React, Tailwind CSS, and Vit
 
 ## Sections
 
-- **Hero** — Name, title, and call-to-action
-- **About** — Bio, photo, and contact details
-- **Skills** — Android, AI-Assisted Dev, Testing, Backend, DevOps, Methodologies
-- **Experience** — Timeline with Digital Factory, TCS, and HumCen
-- **Projects** — BorBuddy, Parking Finder, Banking UI, DermAI, Deepfake Classifier, AI Code Generator
-- **Education** — M.S. Computer Science (AI) from DePaul University + Meta Certification
-- **Contact** — Form and social links
+- **Hero** , Name, title, and call-to-action
+- **About** , Bio, photo, and contact details
+- **Skills** , Android, AI-Assisted Dev, Testing, Backend, DevOps, Methodologies
+- **Experience** , Timeline with Digital Factory, TCS, and HumCen
+- **Projects** , BorBuddy, Parking Finder, Banking UI, DermAI, Deepfake Classifier, AI Code Generator
+- **Education** , M.S. Computer Science (AI) from DePaul University + Meta Certification
+- **Contact** , Form and social links
 
 ## Run Locally
 
