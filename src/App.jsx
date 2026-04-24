@@ -263,7 +263,7 @@ function Hero() {
         }}>
           Android Developer with 2+ years of hands-on experience building native Android
           applications in Kotlin and Java, with deep focus on test automation frameworks,
-          Espresso & Compose UI testing, and CI/CD reliability — plus AI-integrated
+          Espresso & Compose UI testing, and CI/CD reliability -plus AI-integrated
           development workflows.
         </p>
         <div style={{
@@ -349,7 +349,7 @@ function About() {
           }}>
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: sage[800], marginBottom: "1.5rem" }}>
               I'm an Android Developer based in Chicago who specializes at the intersection
-              of native Android engineering and SDET work — building features in Kotlin/Java
+              of native Android engineering and SDET work -building features in Kotlin/Java
               and Jetpack Compose, then writing the Espresso and Compose UI tests that keep
               them stable in CI. M.S. in Computer Science (AI concentration) from DePaul.
             </p>
@@ -357,7 +357,7 @@ function About() {
               I focus on the things that actually move release quality: stable selectors over
               text matching, test doubles via Hilt rather than mocks at the call site,
               MockWebServer for deterministic networking, and merge-gating CI. I also use
-              AI-integrated workflows (Windsurf, Claude) to ship faster — with rigorous
+              AI-integrated workflows (Windsurf, Claude) to ship faster -with rigorous
               review of every generated change.
             </p>
             <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap" }}>
@@ -576,7 +576,7 @@ const projectsData = [
     title: "MapTest Framework",
     subtitle: "Android Maps SDET Framework",
     tech: ["Kotlin", "Jetpack Compose", "Espresso", "Compose UI Test", "Hilt", "Room", "MockWebServer", "MockK", "Page Object Model"],
-    desc: "Production-style Android Maps app paired with a comprehensive SDET test framework. Page Object Model architecture, Hilt-based test doubles via @UninstallModules + @BindValue, MockWebServer for deterministic networking, in-memory Room for DAO tests, and DSA in real context (LRU cache, Trie autocomplete, BFS/Dijkstra route graph, Haversine). Launches without API keys via a graceful fallback UI — runnable on any reviewer's machine.",
+    desc: "Production-style Android Maps app paired with a comprehensive SDET test framework. Page Object Model architecture, Hilt-based test doubles via @UninstallModules + @BindValue, MockWebServer for deterministic networking, in-memory Room for DAO tests, and DSA in real context (LRU cache, Trie autocomplete, BFS/Dijkstra route graph, Haversine). Launches without API keys via a graceful fallback UI -runnable on any reviewer's machine.",
     icon: <Globe size={24} />,
     link: "https://github.com/arulmickel/Map-Test-Framework",
   },
@@ -715,7 +715,7 @@ function Education() {
                 M.S. Computer Science (AI Concentration)
               </h3>
               <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1rem", color: sage[600], marginBottom: "0.75rem" }}>
-                DePaul University, Chicago — Nov 2025
+                DePaul University, Chicago -Nov 2025
               </p>
               <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem", lineHeight: 1.7, color: sage[700] }}>
                 <strong>Relevant Coursework:</strong> Data Structures & Algorithms, Database Management Systems, 
@@ -756,9 +756,9 @@ function Education() {
           </h3>
           <StaggerChildren visible={vis} className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { title: "Google Developer Group", period: "2017–2018", desc: "Android Study Jams — Completed Kotlin bootcamps and app development challenges" },
+              { title: "Google Developer Group", period: "2017–2018", desc: "Android Study Jams -Completed Kotlin bootcamps and app development challenges" },
               { title: "DePaul CS Society", period: "2023–2025", desc: "Led Android dev workshops, mentored undergrads on mobile projects" },
-              { title: "IEEE Computer Society", period: "2017–2020", desc: "Design Head Coordinator — Led 15 members, organized 10+ tech workshops, 30% engagement increase" },
+              { title: "IEEE Computer Society", period: "2017–2020", desc: "Design Head Coordinator -Led 15 members, organized 10+ tech workshops, 30% engagement increase" },
             ].map((a, i) => (
               <div key={i} style={{
                 padding: "1.25rem", borderRadius: 12, border: `1px solid ${sage[100]}`,
@@ -917,7 +917,7 @@ function Footer() {
         fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem",
         color: "rgba(255,255,255,0.5)", marginTop: "0.75rem",
       }}>
-        © {new Date().getFullYear()} Arul Michael Antony Felix Raja. Crafted with passion.
+        © {new Date().getFullYear()} Arul Michael Antony Felix Raja.
       </p>
     </footer>
   );
