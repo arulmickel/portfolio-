@@ -242,7 +242,7 @@ function Hero() {
             letterSpacing: "0.15em", textTransform: "uppercase", color: "rgba(255,255,255,0.8)",
             background: "rgba(255,255,255,0.06)", backdropFilter: "blur(8px)",
           }}>
-            Android Software Developer | AI/ML Integration & Assisted Development
+            Android Developer | Test Automation & SDET | AI-Integrated Development
           </div>
         </div>
         <h1 style={{
@@ -261,9 +261,10 @@ function Hero() {
           opacity: loaded ? 1 : 0, transform: loaded ? "translateY(0)" : "translateY(30px)",
           transition: "all 1s cubic-bezier(0.16,1,0.3,1) 0.6s",
         }}>
-          Android Software Developer with 3+ years of hands-on experience designing, 
-          developing, and maintaining high-quality native Android applications in Kotlin 
-          and Java. Proficient in AI/ML Integration & AI-assisted workflows.
+          Android Developer with 2+ years of hands-on experience building native Android
+          applications in Kotlin and Java, with deep focus on test automation frameworks,
+          Espresso & Compose UI testing, and CI/CD reliability — plus AI-integrated
+          development workflows.
         </p>
         <div style={{
           display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap",
@@ -347,16 +348,17 @@ function About() {
             transition: "all 0.8s cubic-bezier(0.16,1,0.3,1) 0.4s",
           }}>
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: sage[800], marginBottom: "1.5rem" }}>
-              I'm an Android Software Developer based in Chicago with a passion for building 
-              high-quality native Android applications. With a Master's in Computer Science 
-              (AI concentration) from DePaul University and 3+ years of hands-on experience, 
-              I specialize in Kotlin, Java, Jetpack Compose, and Clean Architecture.
+              I'm an Android Developer based in Chicago who specializes at the intersection
+              of native Android engineering and SDET work — building features in Kotlin/Java
+              and Jetpack Compose, then writing the Espresso and Compose UI tests that keep
+              them stable in CI. M.S. in Computer Science (AI concentration) from DePaul.
             </p>
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: sage[700], marginBottom: "2rem" }}>
-              What sets me apart is my experience with AI/ML Integration & AI-assisted development workflows, 
-              leveraging tools like Windsurf AI to accelerate development while rigorously 
-              validating AI-generated code for correctness, security, and performance. I'm 
-              driven by creating apps that are reliable, performant, and genuinely useful.
+              I focus on the things that actually move release quality: stable selectors over
+              text matching, test doubles via Hilt rather than mocks at the call site,
+              MockWebServer for deterministic networking, and merge-gating CI. I also use
+              AI-integrated workflows (Windsurf, Claude) to ship faster — with rigorous
+              review of every generated change.
             </p>
             <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap" }}>
               {[
@@ -380,28 +382,36 @@ function About() {
 /* ═══════════════════════ SKILLS ═══════════════════════ */
 const skillsData = [
   {
+    icon: <Code2 size={28} />, title: "Test Automation & SDET",
+    items: ["Espresso", "Compose UI Test", "JUnit 4", "MockK", "Truth", "Turbine", "Hilt test rules (@UninstallModules + @BindValue)", "MockWebServer", "kotlinx-coroutines-test", "Room in-memory DBs", "Page Object Model", "test data builders", "flake reduction", "animations-disabled test runs"],
+  },
+  {
     icon: <Smartphone size={28} />, title: "Android Development",
-    items: ["Kotlin", "Java", "Android SDK", "Jetpack Compose", "XML Layouts", "MVVM", "MVC", "Clean Architecture", "ViewModel", "LiveData", "Coroutines", "Flow", "Room", "WorkManager", "Retrofit", "OkHttp", "Firebase", "FCM", "Google Play Services", "Material Design", "Play Store Publishing"],
+    items: ["Kotlin", "Java", "Android SDK", "Jetpack Compose", "XML Layouts", "MVVM", "MVC", "Clean Architecture", "ViewModel", "LiveData", "Coroutines", "Flow", "Room", "WorkManager", "Retrofit", "OkHttp", "Material Design", "Play Store Publishing"],
   },
   {
-    icon: <Brain size={28} />, title: "AI-Assisted Development",
-    items: ["Windsurf AI", "Cursor", "Claude with Moltbot",  "AI Code Generation", "AI Code Refactoring", "AI Code Review & Validation", "Prompt Engineering"],
+    icon: <Brain size={28} />, title: "AI-Integrated Development",
+    items: ["Windsurf AI", "Cursor", "Claude", "AI Code Generation", "AI Code Refactoring", "AI Code Review & Validation", "Prompt Engineering"],
   },
   {
-    icon: <Code2 size={28} />, title: "Testing & Debugging",
-    items: ["JUnit", "Espresso", "Android Profiler", "LeakCanary", "Logcat", "Crashlytics", "UI Testing", "Unit Testing"],
+    icon: <Globe size={28} />, title: "Firebase & Services",
+    items: ["Firebase Auth", "Firestore", "FCM", "Crashlytics", "Google Play Services (Maps/Location)", "Google Play Console"],
+  },
+  {
+    icon: <Cpu size={28} />, title: "Debugging & Profiling",
+    items: ["Android Profiler", "LeakCanary", "Logcat", "Crashlytics", "ANR analysis", "memory leak triage"],
   },
   {
     icon: <Cloud size={28} />, title: "Backend & APIs",
     items: ["REST APIs", "JSON", "Spring Boot", "Flask", "MongoDB", "AWS EC2", "S3", "Lambda", "DynamoDB", "CloudWatch", "Secure Data Storage"],
   },
   {
-    icon: <Terminal size={28} />, title: "DevOps & Tools",
-    items: ["Git", "GitHub Actions", "Jenkins", "Docker", "Postman", "Linux", "Bash", "CI/CD Pipelines"],
+    icon: <Terminal size={28} />, title: "DevOps & CI/CD",
+    items: ["Git", "GitHub Actions", "Jenkins", "Docker", "Postman", "Linux", "Bash", "CI/CD Pipelines", "Selenium Grid"],
   },
   {
     icon: <Layers size={28} />, title: "Methodologies & Languages",
-    items: ["Agile/Scrum", "Code Reviews", "Secure Coding", "Mobile App Security", "Kotlin", "Java", "Python", "SQL", "JavaScript", "C++"],
+    items: ["Agile/Scrum", "Code Reviews", "TDD", "Secure Coding", "Mobile App Security", "Kotlin", "Java", "Python", "SQL", "JavaScript", "C++"],
   },
 ];
 
@@ -451,28 +461,32 @@ function Skills() {
 /* ═══════════════════════ EXPERIENCE ═══════════════════════ */
 const experienceData = [
   {
-    role: "Android Developer",
+    role: "Android Developer (Quality + Automation Focus)",
     company: "Digital Factory",
     location: "Chicago, IL",
     period: "Sep 2025 - Present",
     bullets: [
-      "Adopted AI-assisted development workflows using Windsurf AI to accelerate feature development, refactoring, and bug resolution—rigorously validating all AI-generated code, reducing code review turnaround by 30%.",
-      "Designed and built an offline-first geofencing sync system using Room and WorkManager in Kotlin, solving complex state synchronization across Web, API, and Android for 100% data consistency.",
-      "Led migration of legacy XML-based UI flows to Jetpack Compose with Kotlin Coroutines, implementing safe retry policies and exponential backoff that reduced network-related crashes by 15%.",
-      "Managed end-to-end Google Play Store publishing including release management, version updates, crash monitoring via Crashlytics, and Android 13/14/15 compliance.",
-      "Revamped AWS SNS-to-FCM notification infrastructure, optimizing runtime permission flows that increased user opt-in rates by 20%.",
-      "Established CI/CD pipelines using GitHub Actions with JUnit tests and lint checks, reducing regression bugs in an Agile/Scrum environment.",
+      "Authored 25+ Espresso/Compose UI tests for critical user journeys and integrated runs into GitHub Actions to gate merges and reduce regressions.",
+      "Built and maintained Compose UI tests using Semantics test tags and stable selectors; partnered with developers to add test hooks and improve long-term maintainability.",
+      "Improved flaky test reliability by removing brittle selectors, using deterministic test data/setup, and applying synchronization patterns (idling resources / safe waits as needed).",
+      "Implemented reusable automation utilities (helpers, page objects, test data builders) to reduce duplication and enable scalable test coverage across features.",
+      "Built an offline-first geofencing sync system (Room + WorkManager) and validated behavior across connectivity changes, background/foreground transitions, and location permission states.",
+      "Improved reliability with resilient networking (retry + exponential backoff) that reduced network-related crashes by 15%; verified behavior via negative and edge-case test scenarios.",
+      "Revamped AWS SNS to FCM push notification flows and Android 13–15 permission handling; validated delivery, opt-in flows, and error paths end-to-end.",
+      "Strengthened release quality via staged rollouts and Crashlytics monitoring; triaged production issues with clear repro steps and partnered with engineers to drive root-cause fixes.",
+      "Improved CI signal quality by tracking and surfacing flaky test failures for triage.",
     ],
   },
   {
     role: "Software Engineer",
     company: "Tata Consultancy Services",
     location: "India",
-    period: "May 2022 – Jul 2023",
+    period: "May 2022 – Sep 2022",
     bullets: [
-      "Refactored Java/Spring Boot REST APIs consumed by Android and web clients, optimizing database queries to improve response times by 25% and support higher concurrency.",
-      "Developed end-to-end test automation suites integrated with Jenkins CI pipelines, cutting manual QA regression cycles by 40%.",
-      "Implemented AWS CloudWatch alerting and dashboards to proactively identify API downtime, improving system availability benchmarks.",
+      "Refactored Java/Spring Boot REST APIs used by mobile clients; optimized database queries to improve response time by 25% and support higher concurrency.",
+      "Developed and maintained automated test suites integrated with Jenkins CI to reduce manual regression work and improve release confidence.",
+      "Validated backend-integrated flows end-to-end (API behavior, error handling, data correctness) and produced clear defect write-ups to accelerate fixes.",
+      "Implemented CloudWatch dashboards/alerts to accelerate incident detection and triage; partnered with teams to resolve reliability issues.",
     ],
   },
   {
@@ -558,6 +572,14 @@ function Experience() {
 
 /* ═══════════════════════ PROJECTS ═══════════════════════ */
 const projectsData = [
+  {
+    title: "MapTest Framework",
+    subtitle: "Android Maps SDET Framework",
+    tech: ["Kotlin", "Jetpack Compose", "Espresso", "Compose UI Test", "Hilt", "Room", "MockWebServer", "MockK", "Page Object Model"],
+    desc: "Production-style Android Maps app paired with a comprehensive SDET test framework. Page Object Model architecture, Hilt-based test doubles via @UninstallModules + @BindValue, MockWebServer for deterministic networking, in-memory Room for DAO tests, and DSA in real context (LRU cache, Trie autocomplete, BFS/Dijkstra route graph, Haversine). Launches without API keys via a graceful fallback UI — runnable on any reviewer's machine.",
+    icon: <Globe size={24} />,
+    link: "https://github.com/arulmickel/Map-Test-Framework",
+  },
   {
     title: "BorBuddy",
     subtitle: "Social Media App",
@@ -789,8 +811,9 @@ function Contact() {
           {/* info */}
           <div className="md:col-span-2">
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1rem", lineHeight: 1.7, color: sage[700], marginBottom: "2rem" }}>
-              Interested in working together? I'm always open to discussing new opportunities, 
-              projects, or ideas in Android development, AI/ML Integration & AI-assisted workflows.
+              Interested in working together? I'm always open to discussing new opportunities,
+              projects, or ideas in Android development, SDET / test automation, and
+              AI-integrated workflows.
             </p>
             {[
               { icon: <Mail size={20} />, label: "Email", value: "arulmichaelantonyf@gmail.com" },
